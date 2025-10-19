@@ -1,24 +1,22 @@
-# 🏫 Kiosko Universitario UCB
+# Kiosko Universitario UCB
 
 Proyecto integrador de la materia **Programación I**  
 Universidad Católica Boliviana "San Pablo"  
-Sede: Tarija  
+Sede: La Plata 
 Autor: **Fabricio Rivero**
 
----
 
-## 📘 Descripción del proyecto
+## Descripción del proyecto
 
 El sistema **Kiosko Universitario UCB** es una aplicación de consola desarrollada en **Python** que permite gestionar los productos de un kiosko universitario.  
 Permite registrar, modificar, eliminar y buscar productos, además de generar reportes, ordenar el inventario y guardar toda la información en archivos CSV.
 
 Este proyecto aplica los conceptos fundamentales de **programación modular**, **estructuras de datos (listas y diccionarios)**, **persistencia en archivos** y **validaciones de entrada**.
 
----
 
-## ⚙️ Estructura del proyecto
+##  Estructura del proyecto
 
-## 🧠 Funcionalidades principales
+##  Funcionalidades principales
 
 ✅ Ver inventario  
 ✅ Agregar productos con validaciones (sin valores negativos, vacíos o repetidos)  
@@ -30,9 +28,9 @@ Este proyecto aplica los conceptos fundamentales de **programación modular**, *
 ✅ Ordenar el inventario por precio o cantidad  
 ✅ Guardar automáticamente los datos en `datos.csv`
 
----
 
-## 🧩 Validaciones implementadas
+
+## Validaciones implementadas
 
 - No se permite precio o cantidad igual o menor a 0  
 - No se permiten campos vacíos  

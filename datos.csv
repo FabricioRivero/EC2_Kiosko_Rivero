@@ -1,6 +1,7 @@
-codigo,nombre,categoria,cantidad,precio
-001,Refresco Coca Cola,Bebidas,25,7.5
-002,Empanada de queso,Snacks,40,3.5
-003,Agua embotellada,Bebidas,30,5.0
-004,Chocolate,Snacks,15,6.0
-005,Chicle,Misceláneos,50,1.0
+codigo,nombre,precio,stock,stock_minimo,vendidos_hoy
+A1,Chocolate,5.5,20,5,0
+A2,Refresco,7.0,15,4,0
+A3,Galletas,3.0,25,6,0
+A4,Cuaderno,10.0,12,3,0
+A5,Lapiz,2.5,40,10,0
+123C 2,-1,1.0,1,2,0

@@ -5,24 +5,35 @@ def buscar_producto(inventario, codigo):
     return None
 
 def agregar_producto(inventario, nuevo):
-    if buscar_producto(inventario, nuevo['codigo']):
-        print("❌ Ya existe un producto con ese código.")
-        return
     inventario.append(nuevo)
-    print("✅ Producto agregado correctamente.")
+    print("✅ Producto agregado.")
 
 def eliminar_producto(inventario, codigo):
-    producto = buscar_producto(inventario, codigo)
-    if producto:
-        inventario.remove(producto)
+    p = buscar_producto(inventario, codigo)
+    if p:
+        inventario.remove(p)
         print("🗑️ Producto eliminado.")
     else:
-        print("⚠️ No se encontró el producto.")
+        print("⚠️ No encontrado.")
 
-def actualizar_stock(inventario, codigo, nueva_cantidad):
-    producto = buscar_producto(inventario, codigo)
-    if producto:
-        producto['cantidad'] = nueva_cantidad
+def actualizar_stock(inventario, codigo, nuevo_stock):
+    p = buscar_producto(inventario, codigo)
+    if p:
+        p['stock'] = nuevo_stock
         print("🔄 Stock actualizado.")
     else:
-        print("⚠️ No se encontró el producto.")
+        print("⚠️ No encontrado.")
+
+def vender_producto(inventario, codigo, cantidad):
+    p = buscar_producto(inventario, codigo)
+    if not p:
+        print("⚠️ No encontrado.")
+        return 0
+    if p['stock'] < cantidad:
+        print("❌ Stock insuficiente.")
+        return 0
+    p['stock'] -= cantidad
+    p['vendidos_hoy'] += cantidad
+    total = cantidad * p['precio']
+    print(f"✅ Venta registrada: {p['nombre']} ({cantidad} u.) Total Bs {total:.2f}")
+    return total
