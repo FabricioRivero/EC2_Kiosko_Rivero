@@ -14,8 +14,6 @@ Permite registrar, modificar, eliminar y buscar productos, además de generar re
 Este proyecto aplica los conceptos fundamentales de **programación modular**, **estructuras de datos (listas y diccionarios)**, **persistencia en archivos** y **validaciones de entrada**.
 
 
-##  Estructura del proyecto
-
 ##  Funcionalidades principales
 
 ✅ Ver inventario  
